@@ -64,6 +64,7 @@ header
 	.mobile 
 		position: absolute
 		top: 150px
+		right: 0
 
 .section-one
 	margin-top: 100px
@@ -139,7 +140,12 @@ header
 		h2
 			font-size: 60px
 			font-weight: 500
-
+		a
+			span 
+				color: #fff
+			.fa 
+				padding-left: 10px
+				line-height: 16px
 .section-three
 	background: #82CA9C
 	color: #fff
@@ -200,11 +206,12 @@ footer
 		p 
 			line-height: 20px
 			font-size: 12px
-	h2, p, input
+	h2, p
 		margin-top: 20px
 	h2
 		font-weight: 500
 		font-size: 13px
+		margin-bottom: 20px
 	ul 
 		list-style-type: none
 		margin-top: 20px
@@ -217,19 +224,26 @@ footer
 	.info
 		font-size: 10px
 		opacity: 0.5
-	.text 
-		height: 60px
-		width: 480px
-		border-radius: 5px
-		font-size: 25px
-		padding-left: 10px
-	.submit
-		height: 60px
-		width: 60px
-		background: #82CA9C
-		border: none
-		border-radius: 5px
-
+	.search
+		display: flex
+		button
+			height: 60px
+			width: 80px
+			background: #82CA9C
+			border: none
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+			i
+				font-size: 30px
+				font-weight: 100
+				color: #fff
+		.text 
+			height: 60px
+			width: 450px
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+			font-size: 25px
+			padding-left: 10px
 
 @media screen and (max-width: 700px) 
 	.col-s-1 
@@ -256,7 +270,26 @@ footer
 		width: 91.66%
 	.col-s-12 
 		width: 100%	
-    	
+	.mobile
+		display: none
+	header
+		height: 40vh
+		.slogan
+			margin-top: 80px
+	.section-one
+		margin-top: 30px
+		.right
+			margin-top: 0
+	.section-two
+		margin-top: 20px
+	.hero
+		.slogan-2
+			margin-top: 100px
+	.section-four
+		padding-top: 50px
+	footer
+		padding-top: 10px
+
 @media (min-width: 701px) and (max-width: 991px) 
 	.col-m-1 
 		width: 8.33%
@@ -282,6 +315,11 @@ footer
 		width: 91.66%
 	.col-m-12 
 		width: 100%
+	.mobile
+		display: none
+	.section-one
+		.right
+			margin-top: 0
 
 @media screen and (min-width: 992px) 
 	.col-1 
