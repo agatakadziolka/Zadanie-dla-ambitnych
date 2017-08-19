@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300')
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700")
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700")
 $fonts: "Roboto", sans-serif
 $font-grey: #B0B0B0
 * 
 	box-sizing: border-box
 	padding: 0
 	margin: 0
-	font-family: 'Roboto', sans-serif
+	font-family: $fonts
 	font-size: 15px
 
 .container 
@@ -49,7 +51,7 @@ $font-grey: #B0B0B0
 	margin-left: 91.66%
 
 header
-	background: url("https://images.pexels.com/photos/358383/pexels-photo-358383.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
+	background: url("https://images.pexels.com/photos/93730/pexels-photo-93730.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
 	background-size: cover
 	height: 80vh
 	.container
@@ -80,6 +82,9 @@ header
 .section-box
 	color: #fff
 	margin-top: 80px
+	.row
+		display: flex
+		flex-flow: wrap
 	.box-1
 		background: #F5989D
 	.box-2
@@ -162,6 +167,17 @@ header
 .section-four
 	background: #F6F7FA
 	padding: 100px 0 100px 0
+	a 
+		text-decoration: none
+		button
+			padding: 15px 25px 15px 25px
+			color: #fff
+			text-transform: uppercase
+			border-radius: 5px
+			background: #82CA9C
+			border: none
+			display: block 
+			width: 150px	
 	.legacy
 		background: #E1E1E1
 		padding: 5px 15px 5px 15px
@@ -177,14 +193,6 @@ header
 		font-weight: 300
 	p 
 		color: $font-grey
-	button
-		padding: 15px 25px 15px 25px
-		color: #fff
-		text-transform: uppercase
-		border-radius: 5px
-		background: #82CA9C
-		border: none
-		display: block
 	.popular
 		@extend .legacy
 		background: #AC8DC6
@@ -273,7 +281,7 @@ footer
 	.mobile
 		display: none
 	header
-		height: 40vh
+		height: 400px
 		.slogan
 			margin-top: 80px
 	.section-one
@@ -284,7 +292,8 @@ footer
 		margin-top: 20px
 	.hero
 		.slogan-2
-			margin-top: 100px
+			margin: 100px
+			padding-bottom: 100px
 	.section-four
 		padding-top: 50px
 	footer
